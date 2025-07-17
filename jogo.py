@@ -26,6 +26,8 @@ for tentativa in range(1,6):
       print('\n')
 if alternativa!=x:
   print(f'O número secreto era {x}.')
+
+  print('Fim...') 
     
     
     
