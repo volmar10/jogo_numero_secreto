@@ -19,7 +19,11 @@ for tentativa in range(1,4):
   else:
     if alternativa<=0 or alternativa>=20:
       print(f'{alternativa} está fora do intervalo de 1 à 20.')
-    if alternativa==x:
+    elif alternativa<x:
+      print(f'Palpite errado, {alternativa} é menor que o número secreto.')
+    elif alternativa>x:
+      print(f'Palpite errado, {alternativa} é maior que o número secreto.')
+    elif alternativa==x:
       print(f'Parabéns {nome.title()}! Você acertou e o número secreto é {alternativa} ^^')
       break
     else:
